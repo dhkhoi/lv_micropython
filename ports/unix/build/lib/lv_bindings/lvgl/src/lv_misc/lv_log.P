@@ -1,0 +1,23 @@
+build/lib/lv_bindings/lvgl/src/lv_misc/lv_log.o: \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.c \
+ /usr/include/stdc-predef.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lv_conf.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lvgl/src/lv_conf_checker.h
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.c :
+ /usr/include/stdc-predef.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lv_conf.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h :
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h :
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h :
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h :
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h :
+ /usr/include/x86_64-linux-gnu/bits/wchar.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lvgl/src/lv_conf_checker.h :

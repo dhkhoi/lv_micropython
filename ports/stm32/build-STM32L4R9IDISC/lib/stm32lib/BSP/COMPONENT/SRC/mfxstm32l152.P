@@ -1,0 +1,19 @@
+build-STM32L4R9IDISC/lib/stm32lib/BSP/COMPONENT/SRC/mfxstm32l152.o: \
+ ../../lib/stm32lib/BSP/COMPONENT/SRC/mfxstm32l152.c \
+ ../../lib/stm32lib/BSP/COMPONENT/INC/mfxstm32l152.h \
+ ../../lib/stm32lib/BSP/COMMON/ts.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h ../../lib/stm32lib/BSP/COMMON/io.h \
+ ../../lib/stm32lib/BSP/COMMON/idd.h
+ ../../lib/stm32lib/BSP/COMPONENT/SRC/mfxstm32l152.c :
+ ../../lib/stm32lib/BSP/COMPONENT/INC/mfxstm32l152.h :
+ ../../lib/stm32lib/BSP/COMMON/ts.h :
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h :
+ /usr/include/newlib/stdint.h :
+ /usr/include/newlib/machine/_default_types.h :
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h :
+ /usr/include/newlib/sys/_stdint.h ../../lib/stm32lib/BSP/COMMON/io.h :
+ ../../lib/stm32lib/BSP/COMMON/idd.h :

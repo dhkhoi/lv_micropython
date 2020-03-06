@@ -1,0 +1,124 @@
+build/py/objclosure.o: ../../py/objclosure.c /usr/include/stdc-predef.h \
+ /usr/include/string.h /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h /usr/include/xlocale.h \
+ ../../py/obj.h ../../py/mpconfig.h mpconfigport.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_gc.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lv_conf.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lvgl/src/lv_conf_checker.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_mem.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_types.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_ll.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/lv_img_cache.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/lv_img_decoder.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../../../lv_conf.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_fs.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/../../../lv_conf.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_mem.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_types.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_area.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/lv_style.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/lv_font.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/../../../lv_conf.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/lv_symbol_def.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_color.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/../../../lv_conf.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_area.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_anim.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/alloca.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h ../../py/misc.h \
+ ../../py/qstr.h build/genhdr/qstrdefs.generated.h ../../py/mpprint.h \
+ ../../py/runtime0.h ../../py/runtime.h ../../py/mpstate.h \
+ ../../py/mpthread.h mpthreadport.h /usr/include/pthread.h \
+ /usr/include/endian.h /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap-16.h /usr/include/sched.h \
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h ../../py/nlr.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h /usr/include/assert.h \
+ ../../py/objlist.h ../../py/objexcept.h ../../py/objtuple.h \
+ ../../py/pystack.h
+../../py/objclosure.c /usr/include/stdc-predef.h :
+ /usr/include/string.h /usr/include/features.h :
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h :
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h :
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h :
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h /usr/include/xlocale.h :
+ ../../py/obj.h ../../py/mpconfig.h mpconfigport.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_gc.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lv_conf.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h :
+ /usr/include/x86_64-linux-gnu/bits/wchar.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lvgl/src/lv_conf_checker.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_mem.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_types.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_ll.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/lv_img_cache.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/lv_img_decoder.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../../../lv_conf.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_fs.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/../../../lv_conf.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_mem.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_types.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_area.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/lv_style.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/lv_font.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/../../../lv_conf.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/lv_symbol_def.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_color.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/../../../lv_conf.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_area.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_anim.h :
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h :
+ /usr/include/x86_64-linux-gnu/bits/environments.h :
+ /usr/include/x86_64-linux-gnu/bits/types.h :
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h :
+ /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h :
+ /usr/include/alloca.h /usr/include/stdio.h /usr/include/libio.h :
+ /usr/include/_G_config.h /usr/include/wchar.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h :
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h :
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h ../../py/misc.h :
+ ../../py/qstr.h build/genhdr/qstrdefs.generated.h ../../py/mpprint.h :
+ ../../py/runtime0.h ../../py/runtime.h ../../py/mpstate.h :
+ ../../py/mpthread.h mpthreadport.h /usr/include/pthread.h :
+ /usr/include/endian.h /usr/include/x86_64-linux-gnu/bits/endian.h :
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h :
+ /usr/include/x86_64-linux-gnu/bits/byteswap-16.h /usr/include/sched.h :
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/sched.h :
+ /usr/include/x86_64-linux-gnu/bits/time.h :
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h :
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h ../../py/nlr.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h :
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h :
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h :
+ /usr/include/linux/limits.h :
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h /usr/include/assert.h :
+ ../../py/objlist.h ../../py/objexcept.h ../../py/objtuple.h :
+ ../../py/pystack.h :

@@ -1,0 +1,228 @@
+build-STM32L4R9IDISC/extmod/vfs.o: ../../extmod/vfs.c \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h /usr/include/newlib/string.h \
+ /usr/include/newlib/_ansi.h /usr/include/newlib/newlib.h \
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/cdefs.h \
+ /usr/include/newlib/sys/string.h ../../py/runtime.h ../../py/mpstate.h \
+ ../../py/mpconfig.h mpconfigport.h boards/STM32L4R9IDISC/mpconfigboard.h \
+ mpconfigboard_common.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
+ boards/STM32L4R9IDISC/stm32l4xx_hal_conf.h \
+ boards/stm32l4xx_hal_conf_base.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h \
+ ../../lib/stm32lib/CMSIS/STM32L4xx/Include/stm32l4xx.h \
+ ../../lib/stm32lib/CMSIS/STM32L4xx/Include/stm32l4r9xx.h \
+ ../../lib/cmsis/inc/core_cm4.h ../../lib/cmsis/inc/cmsis_version.h \
+ ../../lib/cmsis/inc/cmsis_compiler.h ../../lib/cmsis/inc/cmsis_gcc.h \
+ ../../lib/cmsis/inc/mpu_armv7.h \
+ ../../lib/stm32lib/CMSIS/STM32L4xx/Include/system_stm32l4xx.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_can.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_crc.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_crc_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dcmi.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_hash.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_hcd.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_usb.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_iwdg.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rtc.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rtc_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sd.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_sdmmc.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sd_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_usart.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_usart_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_wwdg.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sram.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_fmc.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_ltdc.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_ltdc_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dsi.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gfxmmu.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma2d.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sai.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sai_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dfsdm.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dfsdm_ex.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_ospi.h \
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dsi.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_gc.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lv_conf.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lvgl/src/lv_conf_checker.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdbool.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_mem.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_types.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_ll.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/lv_img_cache.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/lv_img_decoder.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../../../lv_conf.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_fs.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/../../../lv_conf.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_mem.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_types.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_area.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/lv_style.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/lv_font.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/../../../lv_conf.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/lv_symbol_def.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_color.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/../../../lv_conf.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_area.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_anim.h \
+ /usr/include/newlib/alloca.h ../../py/mpthread.h ../../py/misc.h \
+ ../../py/nlr.h /usr/lib/gcc/arm-none-eabi/4.9.3/include-fixed/limits.h \
+ /usr/include/newlib/assert.h ../../py/obj.h ../../py/qstr.h \
+ build-STM32L4R9IDISC/genhdr/qstrdefs.generated.h ../../py/mpprint.h \
+ ../../py/runtime0.h ../../py/objlist.h ../../py/objexcept.h \
+ ../../py/objtuple.h ../../py/pystack.h ../../py/objstr.h \
+ ../../py/mperrno.h ../../extmod/vfs.h ../../py/lexer.h ../../py/reader.h \
+ ../../extmod/vfs_fat.h ../../lib/oofatfs/ff.h ../../lib/oofatfs/ffconf.h
+../../extmod/vfs.c :
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h :
+ /usr/include/newlib/stdint.h :
+ /usr/include/newlib/machine/_default_types.h :
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h :
+ /usr/include/newlib/sys/_stdint.h /usr/include/newlib/string.h :
+ /usr/include/newlib/_ansi.h /usr/include/newlib/newlib.h :
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h :
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h :
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h :
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h :
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/cdefs.h :
+ /usr/include/newlib/sys/string.h ../../py/runtime.h ../../py/mpstate.h :
+ ../../py/mpconfig.h mpconfigport.h boards/STM32L4R9IDISC/mpconfigboard.h :
+ mpconfigboard_common.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h :
+ boards/STM32L4R9IDISC/stm32l4xx_hal_conf.h :
+ boards/stm32l4xx_hal_conf_base.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h :
+ ../../lib/stm32lib/CMSIS/STM32L4xx/Include/stm32l4xx.h :
+ ../../lib/stm32lib/CMSIS/STM32L4xx/Include/stm32l4r9xx.h :
+ ../../lib/cmsis/inc/core_cm4.h ../../lib/cmsis/inc/cmsis_version.h :
+ ../../lib/cmsis/inc/cmsis_compiler.h ../../lib/cmsis/inc/cmsis_gcc.h :
+ ../../lib/cmsis/inc/mpu_armv7.h :
+ ../../lib/stm32lib/CMSIS/STM32L4xx/Include/system_stm32l4xx.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_can.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_crc.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_crc_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dcmi.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_hash.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_hcd.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_usb.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_iwdg.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rtc.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rtc_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sd.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_sdmmc.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sd_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_usart.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_usart_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_wwdg.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sram.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_fmc.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_ltdc.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_ltdc_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dsi.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gfxmmu.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma2d.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sai.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sai_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dfsdm.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dfsdm_ex.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_ospi.h :
+ ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dsi.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_gc.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lv_conf.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../../../lvgl/src/lv_conf_checker.h :
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdbool.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_mem.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_types.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_ll.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/lv_img_cache.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/lv_img_decoder.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../../../lv_conf.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_fs.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/../../../lv_conf.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_mem.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_types.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_misc/lv_area.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/lv_style.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/lv_font.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/../../../lv_conf.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_font/lv_symbol_def.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_color.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/../../../lv_conf.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_area.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/../lv_draw/../lv_core/../lv_misc/lv_anim.h :
+ /usr/include/newlib/alloca.h ../../py/mpthread.h ../../py/misc.h :
+ ../../py/nlr.h /usr/lib/gcc/arm-none-eabi/4.9.3/include-fixed/limits.h :
+ /usr/include/newlib/assert.h ../../py/obj.h ../../py/qstr.h :
+ build-STM32L4R9IDISC/genhdr/qstrdefs.generated.h ../../py/mpprint.h :
+ ../../py/runtime0.h ../../py/objlist.h ../../py/objexcept.h :
+ ../../py/objtuple.h ../../py/pystack.h ../../py/objstr.h :
+ ../../py/mperrno.h ../../extmod/vfs.h ../../py/lexer.h ../../py/reader.h :
+ ../../extmod/vfs_fat.h ../../lib/oofatfs/ff.h ../../lib/oofatfs/ffconf.h :

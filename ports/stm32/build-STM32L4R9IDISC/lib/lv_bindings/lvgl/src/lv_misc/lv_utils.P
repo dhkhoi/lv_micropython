@@ -1,0 +1,21 @@
+build-STM32L4R9IDISC/lib/lv_bindings/lvgl/src/lv_misc/lv_utils.o: \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_utils.c \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdbool.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_utils.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /usr/include/newlib/stdint.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_stdint.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h \
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_math.h
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_utils.c :
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdbool.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_utils.h :
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h :
+ /usr/include/newlib/stdint.h :
+ /usr/include/newlib/machine/_default_types.h :
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/_intsup.h :
+ /usr/include/newlib/sys/_stdint.h :
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h :
+ ../../lib/lv_bindings/lvgl/src/lv_misc/lv_math.h :

@@ -1,0 +1,435 @@
+build/lib/lv_bindings/driver/SDL/SDL_mouse.o: \
+ ../../lib/lv_bindings/driver/SDL/SDL_mouse.c /usr/include/stdc-predef.h \
+ ../../lib/lv_bindings/driver/SDL/SDL_mouse.h \
+ ../../lib/lv_bindings/driver/SDL/lv_drv_conf.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/lvgl.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_version.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/../../../lv_conf.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/../../../lvgl/src/lv_conf_checker.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_task.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_mem.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_types.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_ll.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_math.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_async.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_task.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal_disp.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/lv_color.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/../../../lv_conf.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/lv_area.h \
+ /usr/include/string.h /usr/include/xlocale.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/lv_ll.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/lv_task.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal_indev.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../../../lv_conf.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal_tick.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_obj.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../../../lv_conf.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_style.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_font/lv_font.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_font/../../../lv_conf.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_font/lv_symbol_def.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_color.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_area.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_anim.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/../../../lv_conf.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_types.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_mem.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_ll.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_log.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_bidi.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_hal/lv_hal.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_group.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_obj.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_indev.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_hal/lv_hal_indev.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_core/lv_group.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_refr.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_disp.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_debug.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/../../../lv_conf.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/../lv_core/lv_style.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/../lv_core/lv_group.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_templ.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_default.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_alien.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_night.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_zen.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_mono.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_nemo.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_material.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_font/lv_font.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_font/lv_font_fmt_txt.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_font/../../../lv_conf.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_font/lv_font.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_bidi.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_printf.h \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_btn.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../../../lv_conf.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_cont.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_core/lv_obj.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_core/lv_indev.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_imgbtn.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_btn.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_img.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../../../lv_conf.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_core/lv_style.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_txt.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/../../../lv_conf.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_area.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/../lv_font/lv_font.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_img_decoder.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_fs.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_mem.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_types.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_area.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_basic.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_font/lv_font.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_color.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_rect.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_label.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_bidi.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_img.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_line.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_triangle.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_arc.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_img.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_misc/lv_fs.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_label.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_font/lv_font.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_font/lv_symbol_def.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_misc/lv_txt.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_label.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_line.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_page.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_misc/lv_anim.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_cont.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_list.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_page.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_img.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_chart.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_line.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_table.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_cb.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_cpicker.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_bar.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_slider.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_bar.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_led.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_btnm.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_kb.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_btnm.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_ddlist.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_objx/lv_page.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_objx/lv_label.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_roller.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_ddlist.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_ta.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_canvas.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_objx/lv_img.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_win.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_tabview.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_objx/lv_win.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_tileview.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_mbox.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_gauge.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_lmeter.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_lmeter.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_sw.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_slider.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_arc.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_preload.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_arc.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_calendar.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_spinbox.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_objx/lv_ta.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_draw/lv_img_cache.h \
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_draw/lv_img_decoder.h \
+ /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
+ /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
+ /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
+ /usr/include/SDL2/close_code.h /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/time.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/sigset.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/strings.h \
+ /usr/include/inttypes.h /usr/include/ctype.h /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_val.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_vall.h \
+ /usr/include/x86_64-linux-gnu/bits/inf.h \
+ /usr/include/x86_64-linux-gnu/bits/nan.h \
+ /usr/include/x86_64-linux-gnu/bits/mathdef.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h /usr/include/iconv.h \
+ /usr/include/SDL2/SDL_assert.h /usr/include/SDL2/SDL_atomic.h \
+ /usr/include/SDL2/SDL_audio.h /usr/include/SDL2/SDL_error.h \
+ /usr/include/SDL2/SDL_endian.h /usr/include/SDL2/SDL_mutex.h \
+ /usr/include/SDL2/SDL_thread.h /usr/include/SDL2/SDL_rwops.h \
+ /usr/include/SDL2/SDL_clipboard.h /usr/include/SDL2/SDL_cpuinfo.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h \
+ /usr/include/SDL2/SDL_events.h /usr/include/SDL2/SDL_video.h \
+ /usr/include/SDL2/SDL_pixels.h /usr/include/SDL2/SDL_rect.h \
+ /usr/include/SDL2/SDL_surface.h /usr/include/SDL2/SDL_blendmode.h \
+ /usr/include/SDL2/SDL_keyboard.h /usr/include/SDL2/SDL_keycode.h \
+ /usr/include/SDL2/SDL_scancode.h /usr/include/SDL2/SDL_mouse.h \
+ /usr/include/SDL2/SDL_joystick.h /usr/include/SDL2/SDL_gamecontroller.h \
+ /usr/include/SDL2/SDL_quit.h /usr/include/SDL2/SDL_gesture.h \
+ /usr/include/SDL2/SDL_touch.h /usr/include/SDL2/SDL_filesystem.h \
+ /usr/include/SDL2/SDL_haptic.h /usr/include/SDL2/SDL_hints.h \
+ /usr/include/SDL2/SDL_loadso.h /usr/include/SDL2/SDL_log.h \
+ /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_power.h \
+ /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_system.h \
+ /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
+ ../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal_indev.h
+ ../../lib/lv_bindings/driver/SDL/SDL_mouse.c /usr/include/stdc-predef.h :
+ ../../lib/lv_bindings/driver/SDL/SDL_mouse.h :
+ ../../lib/lv_bindings/driver/SDL/lv_drv_conf.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/lvgl.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_version.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/../../../lv_conf.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h :
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h :
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h :
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h :
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h :
+ /usr/include/x86_64-linux-gnu/bits/wchar.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/../../../lvgl/src/lv_conf_checker.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_task.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_mem.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_log.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_types.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_ll.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_math.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_async.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_task.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal_disp.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/lv_color.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/../../../lv_conf.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/lv_area.h :
+ /usr/include/string.h /usr/include/xlocale.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/lv_ll.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/lv_task.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal_indev.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/../../../lv_conf.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal_tick.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_obj.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../../../lv_conf.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_style.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_font/lv_font.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_font/../../../lv_conf.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_font/lv_symbol_def.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_color.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_area.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_anim.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/../../../lv_conf.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_types.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_mem.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_ll.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_log.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_misc/lv_bidi.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_hal/lv_hal.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_group.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_obj.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_indev.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_hal/lv_hal_indev.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/../lv_core/lv_group.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_refr.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_disp.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_core/lv_debug.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/../../../lv_conf.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/../lv_core/lv_style.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/../lv_core/lv_group.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_templ.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_default.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_alien.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_night.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_zen.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_mono.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_nemo.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_themes/lv_theme_material.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_font/lv_font.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_font/lv_font_fmt_txt.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_font/../../../lv_conf.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_font/lv_font.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_bidi.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_misc/lv_printf.h :
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types.h :
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h :
+ /usr/include/_G_config.h /usr/include/wchar.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h :
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h :
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_btn.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../../../lv_conf.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_cont.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_core/lv_obj.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_core/lv_indev.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_imgbtn.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_btn.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_img.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../../../lv_conf.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_core/lv_style.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_txt.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/../../../lv_conf.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_area.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/../lv_font/lv_font.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_img_decoder.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_fs.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_mem.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_types.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_area.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_basic.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_font/lv_font.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_color.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_rect.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_label.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/../lv_misc/lv_bidi.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_img.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_line.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_triangle.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw_arc.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_img.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_misc/lv_fs.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_label.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_font/lv_font.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_font/lv_symbol_def.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_misc/lv_txt.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_draw/lv_draw.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_label.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_line.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_page.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_misc/lv_anim.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_cont.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_list.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_page.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_img.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_chart.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_line.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_table.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_cb.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_cpicker.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_bar.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_slider.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_bar.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_led.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_btnm.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_kb.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_btnm.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_ddlist.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_objx/lv_page.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_objx/lv_label.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_roller.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_ddlist.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_ta.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_canvas.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_objx/lv_img.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_win.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_tabview.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_objx/lv_win.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_tileview.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_mbox.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_gauge.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_lmeter.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_lmeter.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_sw.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_slider.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_arc.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_preload.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_arc.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_calendar.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/lv_spinbox.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_objx/../lv_objx/lv_ta.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_draw/lv_img_cache.h :
+ ../../lib/lv_bindings/../../lib/lv_bindings/lvgl/src/lv_draw/lv_img_decoder.h :
+ /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h :
+ /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h :
+ /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h :
+ /usr/include/SDL2/close_code.h /usr/include/x86_64-linux-gnu/sys/types.h :
+ /usr/include/time.h /usr/include/endian.h :
+ /usr/include/x86_64-linux-gnu/bits/endian.h :
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h :
+ /usr/include/x86_64-linux-gnu/bits/byteswap-16.h :
+ /usr/include/x86_64-linux-gnu/sys/select.h :
+ /usr/include/x86_64-linux-gnu/bits/select.h :
+ /usr/include/x86_64-linux-gnu/bits/sigset.h :
+ /usr/include/x86_64-linux-gnu/bits/time.h :
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h :
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/stdlib.h :
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h :
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h :
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/strings.h :
+ /usr/include/inttypes.h /usr/include/ctype.h /usr/include/math.h :
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h :
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h :
+ /usr/include/x86_64-linux-gnu/bits/huge_val.h :
+ /usr/include/x86_64-linux-gnu/bits/huge_valf.h :
+ /usr/include/x86_64-linux-gnu/bits/huge_vall.h :
+ /usr/include/x86_64-linux-gnu/bits/inf.h :
+ /usr/include/x86_64-linux-gnu/bits/nan.h :
+ /usr/include/x86_64-linux-gnu/bits/mathdef.h :
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h /usr/include/iconv.h :
+ /usr/include/SDL2/SDL_assert.h /usr/include/SDL2/SDL_atomic.h :
+ /usr/include/SDL2/SDL_audio.h /usr/include/SDL2/SDL_error.h :
+ /usr/include/SDL2/SDL_endian.h /usr/include/SDL2/SDL_mutex.h :
+ /usr/include/SDL2/SDL_thread.h /usr/include/SDL2/SDL_rwops.h :
+ /usr/include/SDL2/SDL_clipboard.h /usr/include/SDL2/SDL_cpuinfo.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/xmmintrin.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h :
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h :
+ /usr/include/SDL2/SDL_events.h /usr/include/SDL2/SDL_video.h :
+ /usr/include/SDL2/SDL_pixels.h /usr/include/SDL2/SDL_rect.h :
+ /usr/include/SDL2/SDL_surface.h /usr/include/SDL2/SDL_blendmode.h :
+ /usr/include/SDL2/SDL_keyboard.h /usr/include/SDL2/SDL_keycode.h :
+ /usr/include/SDL2/SDL_scancode.h /usr/include/SDL2/SDL_mouse.h :
+ /usr/include/SDL2/SDL_joystick.h /usr/include/SDL2/SDL_gamecontroller.h :
+ /usr/include/SDL2/SDL_quit.h /usr/include/SDL2/SDL_gesture.h :
+ /usr/include/SDL2/SDL_touch.h /usr/include/SDL2/SDL_filesystem.h :
+ /usr/include/SDL2/SDL_haptic.h /usr/include/SDL2/SDL_hints.h :
+ /usr/include/SDL2/SDL_loadso.h /usr/include/SDL2/SDL_log.h :
+ /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_power.h :
+ /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_system.h :
+ /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h :
+ ../../lib/lv_bindings/lvgl/src/lv_hal/lv_hal_indev.h :
