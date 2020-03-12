@@ -190,6 +190,8 @@ enum {
     MP_QSTR_task_handler_ref,
     MP_QSTR_timer_id,
     MP_QSTR_t,
+    MP_QSTR_stm32l4r9_dot_py,
+    MP_QSTR_lvdisplay,
 };
 
 extern const qstr_pool_t mp_qstr_const_pool;
@@ -197,7 +199,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
     (qstr_pool_t*)&mp_qstr_const_pool, // previous pool
     MP_QSTRnumber_of, // previous pool size
     10, // allocated entries
-    146, // used entries
+    148, // used entries
     {
         (const byte*)"\x5a\xdd\x06" "dht.py",
         (const byte*)"\x63\x24\x03" "esp",
@@ -345,6 +347,8 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         (const byte*)"\x81\x21\x10" "task_handler_ref",
         (const byte*)"\xb0\x4d\x08" "timer_id",
         (const byte*)"\xd1\xb5\x01" "t",
+        (const byte*)"\xba\x2a\x0c" "stm32l4r9.py",
+        (const byte*)"\x45\xb0\x09" "lvdisplay",
     },
 };
 
@@ -8646,16 +8650,20 @@ const mp_raw_code_t raw_code_onewire__lt_module_gt_ = {
 };
 
 // frozen bytecode for file lvstm32.py, scope lvstm32__lt_module_gt__lvstm32___init__
-STATIC const byte fun_data_lvstm32__lt_module_gt__lvstm32___init__[67] = {
-    0xbb, 0x80, 0x01, 0x16,
+STATIC const byte fun_data_lvstm32__lt_module_gt__lvstm32___init__[76] = {
+    0xbb, 0x80, 0x01, 0x18,
     MP_QSTR___init__ & 0xff, MP_QSTR___init__ >> 8,
     MP_QSTR_lvstm32_dot_py & 0xff, MP_QSTR_lvstm32_dot_py >> 8,
-    0x80, 0x0b, 0x28, 0x29, 0x2a, 0x2c, 0x00,
+    0x80, 0x0b, 0x28, 0x28, 0x29, 0x2a, 0x2c, 0x00,
+    0x12, MP_QSTR_print & 0xff, MP_QSTR_print >> 8, 
+    0x23, 0x03, 
+    0x34, 0x01, 
+    0x59, 
     0xb0, 
     0x13, MP_QSTR_task_handler & 0xff, MP_QSTR_task_handler >> 8, 
     0xb0, 
     0x18, MP_QSTR_task_handler_ref & 0xff, MP_QSTR_task_handler_ref >> 8, 
-    0x22, 0x87, 0x68, 
+    0x22, 0x80, 0x64, 
     0xb1, 
     0xf6, 
     0xb0, 
@@ -8680,10 +8688,12 @@ STATIC const byte fun_data_lvstm32__lt_module_gt__lvstm32___init__[67] = {
     0x51, 
     0x63, 
 };
-STATIC const mp_rom_obj_t const_table_data_lvstm32__lt_module_gt__lvstm32___init__[3] = {
+STATIC const mp_obj_str_t const_obj_lvstm32__lt_module_gt__lvstm32___init___0 = {{&mp_type_str}, 20013, 17, (const byte*)"\x6c\x76\x73\x74\x6d\x33\x32\x20\x72\x75\x6e\x20\x68\x65\x72\x65\x0a"};
+STATIC const mp_rom_obj_t const_table_data_lvstm32__lt_module_gt__lvstm32___init__[4] = {
     MP_ROM_QSTR(MP_QSTR_self),
     MP_ROM_QSTR(MP_QSTR_freq),
     MP_ROM_QSTR(MP_QSTR_timer_id),
+    MP_ROM_PTR(&const_obj_lvstm32__lt_module_gt__lvstm32___init___0),
 };
 STATIC const mp_raw_code_t raw_code_lvstm32__lt_module_gt__lvstm32___init__ = {
     .kind = MP_CODE_BYTECODE,
@@ -8692,8 +8702,8 @@ STATIC const mp_raw_code_t raw_code_lvstm32__lt_module_gt__lvstm32___init__ = {
     .fun_data = fun_data_lvstm32__lt_module_gt__lvstm32___init__,
     .const_table = (mp_uint_t*)const_table_data_lvstm32__lt_module_gt__lvstm32___init__,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 67,
-    .n_obj = 0,
+    .fun_data_len = 76,
+    .n_obj = 1,
     .n_raw_code = 0,
     #if MICROPY_PY_SYS_SETTRACE
     .prelude = {
@@ -8706,7 +8716,7 @@ STATIC const mp_raw_code_t raw_code_lvstm32__lt_module_gt__lvstm32___init__ = {
         .qstr_block_name = MP_QSTR___init__,
         .qstr_source_file = MP_QSTR_lvstm32_dot_py,
         .line_info = fun_data_lvstm32__lt_module_gt__lvstm32___init__ + 0,
-        .opcodes = fun_data_lvstm32__lt_module_gt__lvstm32___init__ + 15,
+        .opcodes = fun_data_lvstm32__lt_module_gt__lvstm32___init__ + 16,
     },
     .line_of_definition = 0,
     #endif
@@ -8726,7 +8736,7 @@ STATIC const byte fun_data_lvstm32__lt_module_gt__lvstm32_task_handler[20] = {
     0x1a, 0x0e,
     MP_QSTR_task_handler & 0xff, MP_QSTR_task_handler >> 8,
     MP_QSTR_lvstm32_dot_py & 0xff, MP_QSTR_lvstm32_dot_py >> 8,
-    0x80, 0x12, 0x00,
+    0x80, 0x13, 0x00,
     0x12, MP_QSTR_lv & 0xff, MP_QSTR_lv >> 8, 
     0x14, MP_QSTR_task_handler & 0xff, MP_QSTR_task_handler >> 8, 
     0x36, 0x00, 
@@ -8779,7 +8789,7 @@ STATIC const byte fun_data_lvstm32__lt_module_gt__lvstm32_timer_cb[39] = {
     0x2a, 0x10,
     MP_QSTR_timer_cb & 0xff, MP_QSTR_timer_cb >> 8,
     MP_QSTR_lvstm32_dot_py & 0xff, MP_QSTR_lvstm32_dot_py >> 8,
-    0x80, 0x15, 0x4d, 0x00,
+    0x80, 0x16, 0x4d, 0x00,
     0x12, MP_QSTR_lv & 0xff, MP_QSTR_lv >> 8, 
     0x14, MP_QSTR_tick_inc & 0xff, MP_QSTR_tick_inc >> 8, 
     0xb0, 
@@ -8837,16 +8847,16 @@ STATIC const mp_raw_code_t raw_code_lvstm32__lt_module_gt__lvstm32_timer_cb = {
 };
 
 // frozen bytecode for file lvstm32.py, scope lvstm32__lt_module_gt__lvstm32
-STATIC const byte fun_data_lvstm32__lt_module_gt__lvstm32[46] = {
+STATIC const byte fun_data_lvstm32__lt_module_gt__lvstm32[48] = {
     0x08, 0x14,
     MP_QSTR_lvstm32 & 0xff, MP_QSTR_lvstm32 >> 8,
     MP_QSTR_lvstm32_dot_py & 0xff, MP_QSTR_lvstm32_dot_py >> 8,
-    0x8c, 0x0a, 0x8a, 0x07, 0x65, 0x00,
+    0x8c, 0x0a, 0x8c, 0x08, 0x65, 0x00,
     0x11, MP_QSTR___name__ & 0xff, MP_QSTR___name__ >> 8, 
     0x16, MP_QSTR___module__ & 0xff, MP_QSTR___module__ >> 8, 
     0x10, MP_QSTR_lvstm32 & 0xff, MP_QSTR_lvstm32 >> 8, 
     0x16, MP_QSTR___qualname__ & 0xff, MP_QSTR___qualname__ >> 8, 
-    0x99, 
+    0x22, 0x80, 0x64, 
     0x84, 
     0x2a, 0x02, 
     0x53, 
@@ -8871,7 +8881,7 @@ STATIC const mp_raw_code_t raw_code_lvstm32__lt_module_gt__lvstm32 = {
     .fun_data = fun_data_lvstm32__lt_module_gt__lvstm32,
     .const_table = (mp_uint_t*)const_table_data_lvstm32__lt_module_gt__lvstm32,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 46,
+    .fun_data_len = 48,
     .n_obj = 0,
     .n_raw_code = 3,
     #if MICROPY_PY_SYS_SETTRACE
@@ -8901,11 +8911,11 @@ STATIC const mp_raw_code_t raw_code_lvstm32__lt_module_gt__lvstm32 = {
 };
 
 // frozen bytecode for file lvstm32.py, scope lvstm32_<module>
-STATIC const byte fun_data_lvstm32__lt_module_gt_[49] = {
-    0x10, 0x14,
+STATIC const byte fun_data_lvstm32__lt_module_gt_[57] = {
+    0x10, 0x18,
     MP_QSTR__lt_module_gt_ & 0xff, MP_QSTR__lt_module_gt_ >> 8,
     MP_QSTR_lvstm32_dot_py & 0xff, MP_QSTR_lvstm32_dot_py >> 8,
-    0x60, 0x40, 0x28, 0x28, 0x48, 0x00,
+    0x60, 0x40, 0x28, 0x28, 0x48, 0x8b, 0x10, 0x00,
     0x80, 
     0x51, 
     0x1b, MP_QSTR_lvgl & 0xff, MP_QSTR_lvgl >> 8, 
@@ -8923,6 +8933,9 @@ STATIC const byte fun_data_lvstm32__lt_module_gt_[49] = {
     0x10, MP_QSTR_lvstm32 & 0xff, MP_QSTR_lvstm32 >> 8, 
     0x34, 0x02, 
     0x16, MP_QSTR_lvstm32 & 0xff, MP_QSTR_lvstm32 >> 8, 
+    0x11, MP_QSTR_lvstm32 & 0xff, MP_QSTR_lvstm32 >> 8, 
+    0x34, 0x00, 
+    0x59, 
     0x51, 
     0x63, 
 };
@@ -8936,7 +8949,7 @@ const mp_raw_code_t raw_code_lvstm32__lt_module_gt_ = {
     .fun_data = fun_data_lvstm32__lt_module_gt_,
     .const_table = (mp_uint_t*)const_table_data_lvstm32__lt_module_gt_,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 49,
+    .fun_data_len = 57,
     .n_obj = 0,
     .n_raw_code = 1,
     #if MICROPY_PY_SYS_SETTRACE
@@ -8950,7 +8963,231 @@ const mp_raw_code_t raw_code_lvstm32__lt_module_gt_ = {
         .qstr_block_name = MP_QSTR__lt_module_gt_,
         .qstr_source_file = MP_QSTR_lvstm32_dot_py,
         .line_info = fun_data_lvstm32__lt_module_gt_ + 0,
-        .opcodes = fun_data_lvstm32__lt_module_gt_ + 12,
+        .opcodes = fun_data_lvstm32__lt_module_gt_ + 14,
+    },
+    .line_of_definition = 0,
+    #endif
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    .n_qstr = 0,
+    .qstr_link = NULL,
+    #endif
+    #endif
+    #if MICROPY_EMIT_MACHINE_CODE
+    .type_sig = 0,
+    #endif
+};
+
+// frozen bytecode for file stm32l4r9.py, scope stm32l4r9__lt_module_gt__lvdisplay___init__
+STATIC const byte fun_data_stm32l4r9__lt_module_gt__lvdisplay___init__[127] = {
+    0x51, 0x22,
+    MP_QSTR___init__ & 0xff, MP_QSTR___init__ >> 8,
+    MP_QSTR_stm32l4r9_dot_py & 0xff, MP_QSTR_stm32l4r9_dot_py >> 8,
+    0x80, 0x0a, 0x29, 0x29, 0x2a, 0x34, 0x29, 0x2a, 0x25, 0x2a, 0x27, 0x27, 0x00,
+    0x12, MP_QSTR_lv & 0xff, MP_QSTR_lv >> 8, 
+    0x14, MP_QSTR_init & 0xff, MP_QSTR_init >> 8, 
+    0x36, 0x00, 
+    0x59, 
+    0x12, MP_QSTR_lv & 0xff, MP_QSTR_lv >> 8, 
+    0x14, MP_QSTR_disp_buf_t & 0xff, MP_QSTR_disp_buf_t >> 8, 
+    0x36, 0x00, 
+    0xc1, 
+    0x12, MP_QSTR_bytearray & 0xff, MP_QSTR_bytearray >> 8, 
+    0x22, 0x80, 0xe1, 0x40, 
+    0x34, 0x01, 
+    0xc2, 
+    0x12, MP_QSTR_lv & 0xff, MP_QSTR_lv >> 8, 
+    0x14, MP_QSTR_disp_buf_init & 0xff, MP_QSTR_disp_buf_init >> 8, 
+    0xb1, 
+    0xb2, 
+    0x51, 
+    0x12, MP_QSTR_len & 0xff, MP_QSTR_len >> 8, 
+    0xb2, 
+    0x34, 0x01, 
+    0x84, 
+    0xf6, 
+    0x36, 0x04, 
+    0x59, 
+    0x12, MP_QSTR_lv & 0xff, MP_QSTR_lv >> 8, 
+    0x14, MP_QSTR_disp_drv_t & 0xff, MP_QSTR_disp_drv_t >> 8, 
+    0x36, 0x00, 
+    0xc3, 
+    0x12, MP_QSTR_lv & 0xff, MP_QSTR_lv >> 8, 
+    0x14, MP_QSTR_disp_drv_init & 0xff, MP_QSTR_disp_drv_init >> 8, 
+    0xb3, 
+    0x36, 0x01, 
+    0x59, 
+    0xb1, 
+    0xb3, 
+    0x18, MP_QSTR_buffer & 0xff, MP_QSTR_buffer >> 8, 
+    0x12, MP_QSTR_display & 0xff, MP_QSTR_display >> 8, 
+    0x13, MP_QSTR_flush & 0xff, MP_QSTR_flush >> 8, 
+    0xb3, 
+    0x18, MP_QSTR_flush_cb & 0xff, MP_QSTR_flush_cb >> 8, 
+    0x22, 0x83, 0x06, 
+    0xb3, 
+    0x18, MP_QSTR_hor_res & 0xff, MP_QSTR_hor_res >> 8, 
+    0x22, 0x83, 0x06, 
+    0xb3, 
+    0x18, MP_QSTR_ver_res & 0xff, MP_QSTR_ver_res >> 8, 
+    0x12, MP_QSTR_lv & 0xff, MP_QSTR_lv >> 8, 
+    0x14, MP_QSTR_disp_drv_register & 0xff, MP_QSTR_disp_drv_register >> 8, 
+    0xb3, 
+    0x36, 0x01, 
+    0x59, 
+    0x51, 
+    0x63, 
+};
+STATIC const mp_rom_obj_t const_table_data_stm32l4r9__lt_module_gt__lvdisplay___init__[1] = {
+    MP_ROM_QSTR(MP_QSTR_self),
+};
+STATIC const mp_raw_code_t raw_code_stm32l4r9__lt_module_gt__lvdisplay___init__ = {
+    .kind = MP_CODE_BYTECODE,
+    .scope_flags = 0x00,
+    .n_pos_args = 1,
+    .fun_data = fun_data_stm32l4r9__lt_module_gt__lvdisplay___init__,
+    .const_table = (mp_uint_t*)const_table_data_stm32l4r9__lt_module_gt__lvdisplay___init__,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 127,
+    .n_obj = 0,
+    .n_raw_code = 0,
+    #if MICROPY_PY_SYS_SETTRACE
+    .prelude = {
+        .n_state = 11,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name = MP_QSTR___init__,
+        .qstr_source_file = MP_QSTR_stm32l4r9_dot_py,
+        .line_info = fun_data_stm32l4r9__lt_module_gt__lvdisplay___init__ + 0,
+        .opcodes = fun_data_stm32l4r9__lt_module_gt__lvdisplay___init__ + 19,
+    },
+    .line_of_definition = 0,
+    #endif
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    .n_qstr = 0,
+    .qstr_link = NULL,
+    #endif
+    #endif
+    #if MICROPY_EMIT_MACHINE_CODE
+    .type_sig = 0,
+    #endif
+};
+
+// frozen bytecode for file stm32l4r9.py, scope stm32l4r9__lt_module_gt__lvdisplay
+STATIC const byte fun_data_stm32l4r9__lt_module_gt__lvdisplay[28] = {
+    0x00, 0x0e,
+    MP_QSTR_lvdisplay & 0xff, MP_QSTR_lvdisplay >> 8,
+    MP_QSTR_stm32l4r9_dot_py & 0xff, MP_QSTR_stm32l4r9_dot_py >> 8,
+    0x8c, 0x09, 0x00,
+    0x11, MP_QSTR___name__ & 0xff, MP_QSTR___name__ >> 8, 
+    0x16, MP_QSTR___module__ & 0xff, MP_QSTR___module__ >> 8, 
+    0x10, MP_QSTR_lvdisplay & 0xff, MP_QSTR_lvdisplay >> 8, 
+    0x16, MP_QSTR___qualname__ & 0xff, MP_QSTR___qualname__ >> 8, 
+    0x32, 0x00, 
+    0x16, MP_QSTR___init__ & 0xff, MP_QSTR___init__ >> 8, 
+    0x51, 
+    0x63, 
+};
+STATIC const mp_rom_obj_t const_table_data_stm32l4r9__lt_module_gt__lvdisplay[1] = {
+    MP_ROM_PTR(&raw_code_stm32l4r9__lt_module_gt__lvdisplay___init__),
+};
+STATIC const mp_raw_code_t raw_code_stm32l4r9__lt_module_gt__lvdisplay = {
+    .kind = MP_CODE_BYTECODE,
+    .scope_flags = 0x00,
+    .n_pos_args = 0,
+    .fun_data = fun_data_stm32l4r9__lt_module_gt__lvdisplay,
+    .const_table = (mp_uint_t*)const_table_data_stm32l4r9__lt_module_gt__lvdisplay,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 28,
+    .n_obj = 0,
+    .n_raw_code = 1,
+    #if MICROPY_PY_SYS_SETTRACE
+    .prelude = {
+        .n_state = 1,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 0,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name = MP_QSTR_lvdisplay,
+        .qstr_source_file = MP_QSTR_stm32l4r9_dot_py,
+        .line_info = fun_data_stm32l4r9__lt_module_gt__lvdisplay + 0,
+        .opcodes = fun_data_stm32l4r9__lt_module_gt__lvdisplay + 9,
+    },
+    .line_of_definition = 0,
+    #endif
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    .n_qstr = 0,
+    .qstr_link = NULL,
+    #endif
+    #endif
+    #if MICROPY_EMIT_MACHINE_CODE
+    .type_sig = 0,
+    #endif
+};
+
+// frozen bytecode for file stm32l4r9.py, scope stm32l4r9_<module>
+STATIC const byte fun_data_stm32l4r9__lt_module_gt_[65] = {
+    0x10, 0x18,
+    MP_QSTR__lt_module_gt_ & 0xff, MP_QSTR__lt_module_gt_ >> 8,
+    MP_QSTR_stm32l4r9_dot_py & 0xff, MP_QSTR_stm32l4r9_dot_py >> 8,
+    0x60, 0x40, 0x28, 0x30, 0x28, 0x8b, 0x0d, 0x00,
+    0x80, 
+    0x51, 
+    0x1b, MP_QSTR_lvgl & 0xff, MP_QSTR_lvgl >> 8, 
+    0x16, MP_QSTR_lv & 0xff, MP_QSTR_lv >> 8, 
+    0x80, 
+    0x10, MP_QSTR_lvstm32 & 0xff, MP_QSTR_lvstm32 >> 8, 
+    0x2a, 0x01, 
+    0x1b, MP_QSTR_lvstm32 & 0xff, MP_QSTR_lvstm32 >> 8, 
+    0x1c, MP_QSTR_lvstm32 & 0xff, MP_QSTR_lvstm32 >> 8, 
+    0x16, MP_QSTR_lvstm32 & 0xff, MP_QSTR_lvstm32 >> 8, 
+    0x59, 
+    0x80, 
+    0x51, 
+    0x1b, MP_QSTR_display & 0xff, MP_QSTR_display >> 8, 
+    0x16, MP_QSTR_display & 0xff, MP_QSTR_display >> 8, 
+    0x54, 
+    0x32, 0x00, 
+    0x10, MP_QSTR_lvdisplay & 0xff, MP_QSTR_lvdisplay >> 8, 
+    0x34, 0x02, 
+    0x16, MP_QSTR_lvdisplay & 0xff, MP_QSTR_lvdisplay >> 8, 
+    0x11, MP_QSTR_lvdisplay & 0xff, MP_QSTR_lvdisplay >> 8, 
+    0x34, 0x00, 
+    0x59, 
+    0x51, 
+    0x63, 
+};
+STATIC const mp_rom_obj_t const_table_data_stm32l4r9__lt_module_gt_[1] = {
+    MP_ROM_PTR(&raw_code_stm32l4r9__lt_module_gt__lvdisplay),
+};
+const mp_raw_code_t raw_code_stm32l4r9__lt_module_gt_ = {
+    .kind = MP_CODE_BYTECODE,
+    .scope_flags = 0x00,
+    .n_pos_args = 0,
+    .fun_data = fun_data_stm32l4r9__lt_module_gt_,
+    .const_table = (mp_uint_t*)const_table_data_stm32l4r9__lt_module_gt_,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 65,
+    .n_obj = 0,
+    .n_raw_code = 1,
+    #if MICROPY_PY_SYS_SETTRACE
+    .prelude = {
+        .n_state = 3,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 0,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name = MP_QSTR__lt_module_gt_,
+        .qstr_source_file = MP_QSTR_stm32l4r9_dot_py,
+        .line_info = fun_data_stm32l4r9__lt_module_gt_ + 0,
+        .opcodes = fun_data_stm32l4r9__lt_module_gt_ + 14,
     },
     .line_of_definition = 0,
     #endif
@@ -8971,6 +9208,7 @@ const char mp_frozen_mpy_names[] = {
 "lcd160cr_test.py\0"
 "onewire.py\0"
 "lvstm32.py\0"
+"stm32l4r9.py\0"
 "\0"};
 const mp_raw_code_t *const mp_frozen_mpy_content[] = {
     &raw_code_dht__lt_module_gt_,
@@ -8978,4 +9216,5 @@ const mp_raw_code_t *const mp_frozen_mpy_content[] = {
     &raw_code_lcd160cr_test__lt_module_gt_,
     &raw_code_onewire__lt_module_gt_,
     &raw_code_lvstm32__lt_module_gt_,
+    &raw_code_stm32l4r9__lt_module_gt_,
 };

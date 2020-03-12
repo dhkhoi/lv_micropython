@@ -70,17 +70,11 @@ Q(ADC_TR2)
 
 Q(ADC_TR3)
 
-Q(AF12_TIM1)
-
-Q(AF13_TIM8)
-
 Q(AF14_TIM15)
 
 Q(AF14_TIM16)
 
 Q(AF14_TIM17)
-
-Q(AF14_TIM2)
 
 Q(AF1_TIM1)
 
@@ -97,8 +91,6 @@ Q(AF2_TIM4)
 Q(AF2_TIM5)
 
 Q(AF3_SPI2)
-
-Q(AF3_TIM1)
 
 Q(AF3_TIM8)
 
@@ -3444,6 +3436,8 @@ Q(__name__)
 
 Q(__name__)
 
+Q(__name__)
+
 Q(__neg__)
 
 Q(__new__)
@@ -4317,6 +4311,8 @@ Q(buffering)
 Q(builtins)
 
 Q(builtins)
+
+Q(button_read)
 
 Q(bx)
 
@@ -9968,6 +9964,8 @@ Q(init)
 
 Q(init)
 
+Q(init)
+
 Q(init_points)
 
 Q(inner)
@@ -10351,6 +10349,10 @@ Q(itext_transkeys)
 Q(join)
 
 Q(join)
+
+Q(joystick)
+
+Q(joystick)
 
 Q(kb)
 
@@ -11083,6 +11085,8 @@ Q(memaddr)
 Q(memoryview)
 
 Q(memoryview)
+
+Q(mfx_event)
 
 Q(micropython)
 
@@ -11819,6 +11823,8 @@ Q(read)
 Q(read)
 
 Q(read_buf_len)
+
+Q(read_cb)
 
 Q(read_cb)
 

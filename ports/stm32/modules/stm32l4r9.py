@@ -6,12 +6,11 @@
 import lvgl as lv
 from lvstm32 import lvstm32
 import display
-
 class lvdisplay:
     def __init__(self):
-        lv.init()
+        lv.init()	
         disp_buf1 = lv.disp_buf_t()
-        buf1_1 = bytearray(390*20)
+        buf1_1 = bytearray(390*32)
         lv.disp_buf_init(disp_buf1,buf1_1, None, len(buf1_1)//4)
         disp_drv = lv.disp_drv_t()
         lv.disp_drv_init(disp_drv)
@@ -20,6 +19,4 @@ class lvdisplay:
         disp_drv.hor_res = 390
         disp_drv.ver_res = 390
         lv.disp_drv_register(disp_drv)
-
 lvdisplay()
-

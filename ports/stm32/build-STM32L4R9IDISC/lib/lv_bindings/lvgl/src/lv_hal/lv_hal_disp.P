@@ -58,8 +58,13 @@ build-STM32L4R9IDISC/lib/lv_bindings/lvgl/src/lv_hal/lv_hal_disp.o: \
  ../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/../lv_draw/../lv_misc/lv_types.h \
  ../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/../lv_draw/../lv_misc/lv_area.h \
  ../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/../lv_draw/../lv_core/lv_style.h \
- ../../py/mpstate.h ../../py/mpconfig.h mpconfigport.h \
- boards/STM32L4R9IDISC/mpconfigboard.h mpconfigboard_common.h \
+ ../../lib/lv_bindings/lvgl/src/lv_hal/../../../../../ports/Testing_module/DISPLAY/log.h \
+ /usr/include/newlib/stdio.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /usr/include/newlib/sys/types.h /usr/include/newlib/machine/types.h \
+ /usr/include/newlib/sys/stdio.h ../../py/mpstate.h ../../py/mpconfig.h \
+ mpconfigport.h boards/STM32L4R9IDISC/mpconfigboard.h \
+ mpconfigboard_common.h \
  ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
  boards/STM32L4R9IDISC/stm32l4xx_hal_conf.h \
  boards/stm32l4xx_hal_conf_base.h \
@@ -193,8 +198,13 @@ build-STM32L4R9IDISC/lib/lv_bindings/lvgl/src/lv_hal/lv_hal_disp.o: \
  ../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/../lv_draw/../lv_misc/lv_types.h :
  ../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/../lv_draw/../lv_misc/lv_area.h :
  ../../lib/lv_bindings/lvgl/src/lv_hal/../lv_misc/../lv_draw/../lv_core/lv_style.h :
- ../../py/mpstate.h ../../py/mpconfig.h mpconfigport.h :
- boards/STM32L4R9IDISC/mpconfigboard.h mpconfigboard_common.h :
+ ../../lib/lv_bindings/lvgl/src/lv_hal/../../../../../ports/Testing_module/DISPLAY/log.h :
+ /usr/include/newlib/stdio.h :
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h :
+ /usr/include/newlib/sys/types.h /usr/include/newlib/machine/types.h :
+ /usr/include/newlib/sys/stdio.h ../../py/mpstate.h ../../py/mpconfig.h :
+ mpconfigport.h boards/STM32L4R9IDISC/mpconfigboard.h :
+ mpconfigboard_common.h :
  ../../lib/stm32lib/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h :
  boards/STM32L4R9IDISC/stm32l4xx_hal_conf.h :
  boards/stm32l4xx_hal_conf_base.h :

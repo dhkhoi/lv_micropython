@@ -21,6 +21,13 @@
     #define MODULE_DEF_MP_QSTR_DISPLAY
 #endif
 
+#if (MODULE_joystick_ENABLED)
+    extern const struct _mp_obj_module_t joystick_user_cmodule;
+    #define MODULE_DEF_MP_QSTR_JOYSTICK { MP_ROM_QSTR(MP_QSTR_joystick), MP_ROM_PTR(&joystick_user_cmodule) },
+#else
+    #define MODULE_DEF_MP_QSTR_JOYSTICK
+#endif
+
 #if (MICROPY_PY_ARRAY)
     extern const struct _mp_obj_module_t mp_module_uarray;
     #define MODULE_DEF_MP_QSTR_UARRAY { MP_ROM_QSTR(MP_QSTR_uarray), MP_ROM_PTR(&mp_module_uarray) },
@@ -33,5 +40,6 @@
     MODULE_DEF_MP_QSTR_LCD \
     MODULE_DEF_MP_QSTR_LED \
     MODULE_DEF_MP_QSTR_DISPLAY \
+    MODULE_DEF_MP_QSTR_JOYSTICK \
     MODULE_DEF_MP_QSTR_UARRAY \
 // MICROPY_REGISTERED_MODULES

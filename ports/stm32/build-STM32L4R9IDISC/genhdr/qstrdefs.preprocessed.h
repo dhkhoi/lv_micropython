@@ -10556,7 +10556,7 @@ void HAL_SYSCFG_EnableIOAnalogSwitchBooster(void);
 void HAL_SYSCFG_DisableIOAnalogSwitchBooster(void);
 # 31 "./mpconfigboard_common.h" 2
 # 33 "./mpconfigport.h" 2
-# 201 "./mpconfigport.h"
+# 202 "./mpconfigport.h"
 extern const struct _mp_obj_module_t machine_module;
 extern const struct _mp_obj_module_t pyb_module;
 extern const struct _mp_obj_module_t stm_module;
@@ -10572,7 +10572,7 @@ extern const struct _mp_obj_module_t mp_module_usocket;
 extern const struct _mp_obj_module_t mp_module_network;
 extern const struct _mp_obj_module_t mp_module_onewire;
 extern const struct _mp_obj_module_t mp_module_lvgl;
-# 269 "./mpconfigport.h"
+# 270 "./mpconfigport.h"
 # 1 "../../lib/lv_bindings/lvgl/src/lv_misc/lv_gc.h" 1
 # 20 "../../lib/lv_bindings/lvgl/src/lv_misc/lv_gc.h"
 # 1 "../../lib/lv_bindings/lvgl/src/lv_misc/../../../lv_conf.h" 1
@@ -12624,12 +12624,12 @@ void lv_img_cache_set_size(uint16_t new_slot_num);
 
 void lv_img_cache_invalidate_src(const void * src);
 # 28 "../../lib/lv_bindings/lvgl/src/lv_misc/lv_gc.h" 2
-# 270 "./mpconfigport.h" 2
-# 332 "./mpconfigport.h"
+# 271 "./mpconfigport.h" 2
+# 333 "./mpconfigport.h"
 typedef int mp_int_t;
 typedef unsigned int mp_uint_t;
 typedef long mp_off_t;
-# 346 "./mpconfigport.h"
+# 347 "./mpconfigport.h"
 static inline void enable_irq(mp_uint_t state) {
     __set_PRIMASK(state);
 }
@@ -12639,9 +12639,9 @@ static inline mp_uint_t disable_irq(void) {
     __disable_irq();
     return state;
 }
-# 394 "./mpconfigport.h"
+# 395 "./mpconfigport.h"
 # 1 "/usr/include/newlib/alloca.h" 1 3
-# 394 "./mpconfigport.h" 2
+# 395 "./mpconfigport.h" 2
 # 63 "../../py/mpconfig.h" 2
 # 646 "../../py/mpconfig.h"
 typedef float mp_float_t;
@@ -13454,17 +13454,11 @@ Q(ADC_TR2)
 
 Q(ADC_TR3)
 
-Q(AF12_TIM1)
-
-Q(AF13_TIM8)
-
 Q(AF14_TIM15)
 
 Q(AF14_TIM16)
 
 Q(AF14_TIM17)
-
-Q(AF14_TIM2)
 
 Q(AF1_TIM1)
 
@@ -13481,8 +13475,6 @@ Q(AF2_TIM4)
 Q(AF2_TIM5)
 
 Q(AF3_SPI2)
-
-Q(AF3_TIM1)
 
 Q(AF3_TIM8)
 
@@ -16828,6 +16820,8 @@ Q(__name__)
 
 Q(__name__)
 
+Q(__name__)
+
 Q(__neg__)
 
 Q(__new__)
@@ -17701,6 +17695,8 @@ Q(buffering)
 Q(builtins)
 
 Q(builtins)
+
+Q(button_read)
 
 Q(bx)
 
@@ -23352,6 +23348,8 @@ Q(init)
 
 Q(init)
 
+Q(init)
+
 Q(init_points)
 
 Q(inner)
@@ -23735,6 +23733,10 @@ Q(itext_transkeys)
 Q(join)
 
 Q(join)
+
+Q(joystick)
+
+Q(joystick)
 
 Q(kb)
 
@@ -24467,6 +24469,8 @@ Q(memaddr)
 Q(memoryview)
 
 Q(memoryview)
+
+Q(mfx_event)
 
 Q(micropython)
 
@@ -25203,6 +25207,8 @@ Q(read)
 Q(read)
 
 Q(read_buf_len)
+
+Q(read_cb)
 
 Q(read_cb)
 
