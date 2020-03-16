@@ -710,6 +710,7 @@ void EXTI15_10_IRQHandler(void)
 #endif /* defined(LCD_DIMMING) */
 
   HAL_GPIO_EXTI_IRQHandler(SEL_JOY_PIN);
+  HAL_GPIO_EXTI_IRQHandler(TS_INT_PIN);
 }
 
 /**

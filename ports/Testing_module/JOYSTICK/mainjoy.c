@@ -39,7 +39,7 @@ void joy_init(void)
     
 
 
-	lv_indev_drv_t indev_drv;
+	 lv_indev_drv_t indev_drv;
     BSP_JOY_Init(JOY_MODE_EXTI);
     __HAL_RCC_I2C1_CLK_ENABLE();
 
@@ -94,7 +94,6 @@ static int8_t button_get_pressed_id(void)
 
 }
 
-
 void Mfx_Event(void)
 {
   uint32_t irqPending;
@@ -142,7 +141,7 @@ void Mfx_Event(void)
     }
 
     /* Insert a little delay to avoid debounce */
-    //HAL_Delay(500);
+    HAL_Delay(5);
 
     /* Clear IO Expander IT */
     BSP_IO_ITClear(statusGpio);

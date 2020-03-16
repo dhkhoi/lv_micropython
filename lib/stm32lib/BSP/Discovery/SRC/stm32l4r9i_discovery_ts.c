@@ -103,11 +103,12 @@ uint8_t BSP_TS_Init(uint16_t ts_SizeX, uint16_t ts_SizeY)
     /* Calibrate, Configure and Start the TouchScreen driver */
     tsDriver->Start(I2C_Address);
 
+    HwRotation = 1;
     /* Read firmware register to know if HW rotation is implemented */
-    if(TS_IO_Read(I2C_Address, FT3X67_FIRMID_REG) != 0x01)
-    {
-      HwRotation = 1;
-    }
+//    if(TS_IO_Read(I2C_Address, FT3X67_FIRMID_REG) != 0x01)
+//    {
+//      HwRotation = 1;
+//    }
   }
   else
   {
@@ -161,7 +162,7 @@ uint8_t BSP_TS_GetState(TS_StateTypeDef *TS_State)
         xc = x[index] - 195;
         yc = y[index] - 195;
 
-        /* Apply rotation of 45° */
+        /* Apply rotation of 45ï¿½ */
         xr = (int16_t) (sqrt(2) * (xc - yc) / 2);
         yr = (int16_t) (sqrt(2) * (xc + yc) / 2);
 
@@ -308,13 +309,21 @@ uint8_t BSP_TS_ResetTouchData(TS_StateTypeDef *TS_State)
   */
 uint8_t BSP_TS_ITConfig(void)
 {
+  GPIO_InitTypeDef gpio_init_structure;
+
+  /* Configure Interrupt mode for TS detection pin */
+  gpio_init_structure.Pin = TS_INT_PIN;
+  gpio_init_structure.Pull = GPIO_PULLUP;
+  gpio_init_structure.Speed = GPIO_SPEED_FAST;
+  gpio_init_structure.Mode = GPIO_MODE_IT_FALLING;
+  HAL_GPIO_Init(TS_INT_GPIO_PORT, &gpio_init_structure);
+
+  /* Enable and set Touch screen EXTI Interrupt to the lowest priority */
+  HAL_NVIC_SetPriority((IRQn_Type)(TS_INT_EXTI_IRQn), 0x0F, 0x00);
+  HAL_NVIC_EnableIRQ((IRQn_Type)(TS_INT_EXTI_IRQn));
+
   /* Enable the TS ITs */
   tsDriver->EnableIT(I2C_Address);
-
-  /* Configure touchscreen interrupt pin */
-  BSP_IO_ConfigPin(TS_INT_PIN, IO_MODE_IT_FALLING_EDGE_PU);
-  /* Configure IO Expander interrupt */
-  MFX_IO_ITConfig();
 
   return TS_OK;
 }
@@ -326,7 +335,13 @@ uint8_t BSP_TS_ITConfig(void)
 uint8_t BSP_TS_ITDisable(void)
 {
   /* Configure touchscreen interrupt pin */
-  BSP_IO_ConfigPin(TS_INT_PIN, IO_MODE_ANALOG);
+	  GPIO_InitTypeDef gpio_init_structure;
+
+	gpio_init_structure.Pin = TS_INT_PIN;
+	gpio_init_structure.Pull = GPIO_PULLUP;
+	gpio_init_structure.Speed = GPIO_SPEED_FAST;
+	gpio_init_structure.Mode = GPIO_MODE_ANALOG;
+	HAL_GPIO_Init(TS_INT_GPIO_PORT, &gpio_init_structure);
 
   /* Disable the TS ITs */
   tsDriver->DisableIT(I2C_Address);
