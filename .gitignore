@@ -32,4 +32,7 @@
 # Executables
 *.exe
 *.out
-*.app
+
+#folder
+ports/stm32/build-STM32L4R9IDISC
+

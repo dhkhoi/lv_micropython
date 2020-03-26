@@ -322,7 +322,7 @@ typedef enum
 #define TS_INT_EXTI_IRQn		 EXTI15_10_IRQn
 
 /* TS RES pin */
-#define TS_RES_PIN                  	 GPIO_PIN_15
+#define TS_RES_PIN                  	 GPIO_PIN_13
 #define TS_RES_GPIO_PORT            	 GPIOB
 #define TS_RES_GPIO_CLK_ENABLE()    	 __HAL_RCC_GPIOB_CLK_ENABLE()
 #define TS_RES_GPIO_CLK_DISABLE()   	 __HAL_RCC_GPIOB_CLK_DISABLE()

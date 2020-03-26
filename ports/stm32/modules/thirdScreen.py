@@ -1,11 +1,12 @@
 import lvgl as lv
+lv.init()
 from lvstm32 import lvstm32
 import display
-
+display.init()
+import touchscreen
+touchscreen.init()
 class thirdScreen:
     def __init__(self):
-        lv.init()
-	display.init()
         disp_buf1 = lv.disp_buf_t()
         buf1_1 = bytearray(390*32)
         lv.disp_buf_init(disp_buf1,buf1_1, None, len(buf1_1)//4)

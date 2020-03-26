@@ -177,7 +177,7 @@
 #define MODULE_LED_ENABLED 	(1)
 #define MODULE_LCD_ENABLED 	(1)
 #define MODULE_display_ENABLED 	(1)
-#define MODULE_joystick_ENABLED 	(1)
+//#define MODULE_joystick_ENABLED 	(1)
 #define MODULE_touchscreen_ENABLED 	(1)
 // fatfs configuration used in ffconf.h
 #define MICROPY_FATFS_ENABLE_LFN       (1)

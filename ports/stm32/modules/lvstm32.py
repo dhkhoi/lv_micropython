@@ -9,7 +9,7 @@ import pyb
 
 class lvstm32():
     def __init__(self, freq=100, timer_id=4):
-	print ('lvstm32 run here\n')
+	#print ('lvstm32 run here\n')
         self.task_handler_ref = self.task_handler  # Allocation occurs here
         self.delay = 100 // freq
         tim = pyb.Timer(timer_id)

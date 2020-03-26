@@ -22,9 +22,9 @@ STATIC MP_DEFINE_CONST_FUN_OBJ_0(mp_touchscreen_init_obj, mp_touchscreen_init);
 DEFINE_PTR_OBJ(touchpad_read);
 
 STATIC const mp_rom_map_elem_t touchscreen_globals_table[] = {
-	{ MP_ROM_QSTR(MP_QSTR___name__), MP_ROM_QSTR(MP_QSTR_joystick) },
+	{ MP_ROM_QSTR(MP_QSTR___name__), MP_ROM_QSTR(MP_QSTR_touchscreen) },
 	{ MP_ROM_QSTR(MP_QSTR_init), MP_ROM_PTR(&mp_touchscreen_init_obj) },
-	{ MP_ROM_QSTR(MP_QSTR_read_cb), MP_ROM_PTR(&PTR_OBJ(touchpad_read)) },
+	{ MP_ROM_QSTR(MP_QSTR_touchscreen_read), MP_ROM_PTR(&PTR_OBJ(touchpad_read)) },
 };
 
 STATIC MP_DEFINE_CONST_DICT (

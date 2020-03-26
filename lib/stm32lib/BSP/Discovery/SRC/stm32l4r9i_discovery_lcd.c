@@ -391,8 +391,11 @@ uint8_t BSP_LCD_Init(void)
      // Go back in standard commands.
      HAL_DSI_ShortWrite(&hdsi_discovery, 0, DSI_DCS_SHORT_PKT_WRITE_P1, 0xFE, 0x00);
 
-     // set tear on
-     HAL_DSI_ShortWrite(&hdsi_discovery, 0, DSI_DCS_SHORT_PKT_WRITE_P1, DSI_SET_TEAR_ON, 0x00);
+     // set tear off
+     HAL_DSI_ShortWrite(&hdsi_discovery, 0, DSI_DCS_SHORT_PKT_WRITE_P1, DSI_SET_TEAR_OFF, 0x00);
+
+//Set DSI mode to internal timing
+HAL_DSI_ShortWrite(&hdsi_discovery, 0, DSI_DCS_SHORT_PKT_WRITE_P1, 0xC2, 0x00);
 
      // set column address
      uint8_t set_column_addr[] = {0x00, 0x04, 0x01, 0x89};
@@ -415,22 +418,25 @@ uint8_t BSP_LCD_Init(void)
      // partial mode
      HAL_DSI_ShortWrite(&hdsi_discovery, 0, DSI_DCS_SHORT_PKT_WRITE_P0, DSI_ENTER_PARTIAL_MODE, 0x00);
 
-   // Sleep out.
-     HAL_DSI_ShortWrite(&hdsi_discovery, 0, DSI_DCS_SHORT_PKT_WRITE_P0, DSI_EXIT_SLEEP_MODE, 0x00);
 
-     HAL_Delay(150);
- // Set display on.
-     if ( HAL_DSI_ShortWrite(&hdsi_discovery, 0, DSI_DCS_SHORT_PKT_WRITE_P0, DSI_SET_DISPLAY_ON, 0x0) != HAL_OK )
-     {
-       return (LCD_ERROR);
-     }
+
     /* Set memory address MODIFIED vs ORIGINAL */
     uint8_t InitParam1[4]= {0x00, 0x04, 0x01, 0x89}; // MODIF OFe: adjusted w/ real image
     HAL_DSI_LongWrite(&hdsi_discovery, 0, DSI_DCS_LONG_PKT_WRITE, 4, DSI_SET_COLUMN_ADDRESS, InitParam1);
     uint8_t InitParam2[4]= {0x00, 0x00, 0x01, 0x85};
     HAL_DSI_LongWrite(&hdsi_discovery, 0, DSI_DCS_LONG_PKT_WRITE, 4, DSI_SET_PAGE_ADDRESS, InitParam2);
-    
-  HAL_Delay(120);
+
+     // Sleep out.
+     HAL_DSI_ShortWrite(&hdsi_discovery, 0, DSI_DCS_SHORT_PKT_WRITE_P0, DSI_EXIT_SLEEP_MODE, 0x00);
+
+     HAL_Delay(150);
+
+     // Set display on.
+     if ( HAL_DSI_ShortWrite(&hdsi_discovery, 0, DSI_DCS_SHORT_PKT_WRITE_P0, DSI_SET_DISPLAY_ON, 0x0) != HAL_OK )
+     {
+       return (LCD_ERROR);
+     }
+   // HAL_Delay(120);
 
     /* Enable DSI Wrapper */
     __HAL_DSI_WRAPPER_ENABLE(&hdsi_discovery);

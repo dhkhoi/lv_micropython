@@ -48,6 +48,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l4r9i_discovery_ts.h"
 #include "math.h"
+#include "../../../../../ports/Testing_module/DISPLAY/log.h"
 
 /** @addtogroup BSP
   * @{
