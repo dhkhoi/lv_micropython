@@ -9,7 +9,7 @@ from lvstm32 import lvstm32
 import display
 display.init()
 import touchscreen
-class lvdisplay:
+class lvdisplay:    
     def __init__(self):    	
         disp_buf1 = lv.disp_buf_t()
         buf1_1 = bytearray(390*32)
@@ -27,5 +27,5 @@ class lvdisplay:
         indev_drv.type = lv.INDEV_TYPE.POINTER
         indev_drv.read_cb = touchscreen.touchscreen_read
         lv.indev_drv_register(indev_drv)
-
+        #from firstScreen import firstScreen
 lvdisplay()

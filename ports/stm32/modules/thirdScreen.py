@@ -3,20 +3,8 @@ lv.init()
 from lvstm32 import lvstm32
 import display
 display.init()
-import touchscreen
-touchscreen.init()
 class thirdScreen:
     def __init__(self):
-        disp_buf1 = lv.disp_buf_t()
-        buf1_1 = bytearray(390*32)
-        lv.disp_buf_init(disp_buf1,buf1_1, None, len(buf1_1)//4)
-        disp_drv = lv.disp_drv_t()
-        lv.disp_drv_init(disp_drv)
-        disp_drv.buffer = disp_buf1
-        disp_drv.flush_cb = display.flush
-        disp_drv.hor_res = 390
-        disp_drv.ver_res = 390
-        lv.disp_drv_register(disp_drv)
 
 	scr = lv.obj()
 
@@ -60,21 +48,15 @@ class thirdScreen:
 	arcSecond.align(None, lv.ALIGN.CENTER, 0, 0)
 
 	def event_handler(obj, event):
-    		from firstScreen import firstScreen
+		lv.obj_del(scr)
+		from secondScreen import secondScreen
 
-	roller1 = lv.roller(scr)
-	roller1.set_options("\n".join([
-                    	"Facebook",
-                    	"Instagram",
-                    	"Twitter",
-                    	]), lv.roller.MODE.INIFINITE)
-
-	roller1.set_visible_row_count(4)
-	roller1.align(None, lv.ALIGN.CENTER, 0, 0)
-	roller1.set_event_cb(event_handler)
+	btn1 = lv.btn(scr)
+	btn1.set_event_cb(event_handler)
+	btn1.align(None, lv.ALIGN.CENTER, 0, 0)
+	label = lv.label(btn1)
+	label.set_text("Button")
 
 	lv.scr_load(scr)
-
-	display.refresh()
 
 thirdScreen()

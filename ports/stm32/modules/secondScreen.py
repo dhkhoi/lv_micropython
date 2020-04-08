@@ -3,21 +3,8 @@ lv.init()
 from lvstm32 import lvstm32
 import display
 display.init()
-import touchscreen
-touchscreen.init()
 class secondScreen:
     def __init__(self):
-        disp_buf1 = lv.disp_buf_t()
-        buf1_1 = bytearray(390*32)
-        lv.disp_buf_init(disp_buf1,buf1_1, None, len(buf1_1)//4)
-        disp_drv = lv.disp_drv_t()
-        lv.disp_drv_init(disp_drv)
-        disp_drv.buffer = disp_buf1
-        disp_drv.flush_cb = display.flush
-        disp_drv.hor_res = 390
-        disp_drv.ver_res = 390
-        lv.disp_drv_register(disp_drv)
-
 	scr = lv.obj()
 
 	#############################create a gauge#################################
@@ -91,15 +78,16 @@ class secondScreen:
 	led2.set_style(lv.led.STYLE.MAIN, style_led2)
 	led2.align(None, lv.ALIGN.CENTER, -40, 85)
 	led2.on()
-	def event_handler2(obj, event):
-		from firstScreen import firstScreen
+	def event_handler(obj, event):
+		lv.obj_del(scr)
+		from thirdScreen import thirdScreen
 
 	btnLED2 = lv.btn(scr)
 	btnLED2.align(lv.scr_act(), lv.ALIGN.CENTER, 30, 105)
 	btnLED2.set_size(70, 30)
 	labelLED2 = lv.label(btnLED2)
 	labelLED2.set_text("Memory") 
-	btnLED2.set_event_cb(event_handler2)
+	btnLED2.set_event_cb(event_handler)
 	#color for LED 3
 	style_led3 = lv.style_t()
 	lv.style_copy(style_led3, lv.style_pretty_color)
@@ -122,7 +110,5 @@ class secondScreen:
 	labelLED3.set_text("RAM") 
 
 	lv.scr_load(scr)
-
-	display.refresh()
 
 secondScreen()
