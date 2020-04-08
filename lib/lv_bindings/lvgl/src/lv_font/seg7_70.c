@@ -1,16 +1,16 @@
 #include "../../lvgl.h"
 
 /*******************************************************************************
- * Size: 22 px
+ * Size: 70 px
  * Bpp: 4
- * Opts: --no-compress --no-prefilter --bpp 4 --size 22 --font Roboto-Regular.woff -r 0x20-0x7F --font FontAwesome5-Solid+Brands+Regular.woff -r 61441,61448,61451,61452,61452,61453,61457,61459,61461,61465,61468,61473,61478,61479,61480,61502,61512,61515,61516,61517,61521,61522,61523,61524,61543,61544,61550,61552,61553,61556,61559,61560,61561,61563,61587,61589,61636,61637,61639,61671,61674,61683,61724,61732,61787,61931,62016,62017,62018,62019,62020,62087,62099,62212,62189,62810,63426,63650 --format lvgl -o lv_font_roboto_22.c --force-fast-kern-format
+ * Opts: 
  ******************************************************************************/
 
-#ifndef LV_FONT_ROBOTO_22
-#define LV_FONT_ROBOTO_22 1
+#ifndef SEG7_70
+#define SEG7_70 1
 #endif
 
-#if LV_FONT_ROBOTO_22
+#if SEG7_70
 
 /*-----------------
  *    BITMAPS
@@ -2825,7 +2825,7 @@ static lv_font_fmt_txt_dsc_t font_dsc = {
  *----------------*/
 
 /*Initialize a public general font descriptor*/
-lv_font_t lv_font_roboto_22 = {
+lv_font_t seg7_70 = {
     .get_glyph_dsc = lv_font_get_glyph_dsc_fmt_txt,    /*Function pointer to get glyph's data*/
     .get_glyph_bitmap = lv_font_get_bitmap_fmt_txt,    /*Function pointer to get glyph's bitmap*/
     .line_height = 56,          /*The maximum line height required by the font*/
@@ -2836,5 +2836,5 @@ lv_font_t lv_font_roboto_22 = {
     .dsc = &font_dsc           /*The custom font data. Will be accessed by `get_glyph_bitmap/dsc` */
 };
 
-#endif /*#if LV_FONT_ROBOTO_22*/
+#endif /*#if SEG7_70*/
 

@@ -77,7 +77,9 @@ extern "C" {
 #define LV_SYMBOL_BACKSPACE       "\xef\x95\x9A" /*62810, 0xF55A*/
 #define LV_SYMBOL_SD_CARD         "\xef\x9F\x82" /*63426, 0xF7C2*/
 #define LV_SYMBOL_NEW_LINE        "\xef\xA2\xA2" /*63650, 0xF8A2*/
-
+#define LV_SYMBOL_STEP            "\xef\x95\x8B" /*0xF54B*/
+#define LV_SYMBOL_HEART           "\xef\x88\x9E" /*0xF21E*/
+#define LV_SYMBOL_CALORIES        "\xef\x81\xAD" /*0xF06D*/
 /** Invalid symbol at (U+F8FF). If written before a string then `lv_img` will show it as a label*/
 #define LV_SYMBOL_DUMMY           "\xEF\xA3\xBF"
 
@@ -137,6 +139,9 @@ enum {
     _LV_STR_SYMBOL_BATTERY_EMPTY,
     _LV_STR_SYMBOL_BLUETOOTH,
     _LV_STR_SYMBOL_DUMMY,
+    _LV_STR_SYMBOL_STEP,
+    _LV_STR_SYMBOL_HEART,
+    _LV_STR_SYMBOL_CALORIES,
 };
 
 #ifdef __cplusplus
