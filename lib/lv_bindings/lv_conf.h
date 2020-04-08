@@ -303,7 +303,7 @@ typedef void * lv_indev_drv_user_data_t;            /*Type of user data in the i
 /* Robot fonts with bpp = 4
  * https://fonts.google.com/specimen/Roboto  */
 #ifndef LV_FONT_ROBOTO_12
-#define LV_FONT_ROBOTO_12    0
+#define LV_FONT_ROBOTO_12    1
 #endif  // LV_FONT_ROBOTO_12
 
 #ifndef LV_FONT_ROBOTO_16
@@ -311,7 +311,7 @@ typedef void * lv_indev_drv_user_data_t;            /*Type of user data in the i
 #endif // LV_FONT_ROBOTO_16
 
 #ifndef LV_FONT_ROBOTO_22
-#define LV_FONT_ROBOTO_22    0
+#define LV_FONT_ROBOTO_22    1
 #endif  // LV_FONT_ROBOTO_22
 
 #ifndef LV_FONT_ROBOTO_28
@@ -325,6 +325,10 @@ typedef void * lv_indev_drv_user_data_t;            /*Type of user data in the i
 /*Pixel perfect monospace font
  * http://pelulamu.net/unscii/ */
 #define LV_FONT_UNSCII_8     0
+
+#ifndef SEG7_70
+#define SEG7_70   1
+#endif // SEG7_70
 
 /* Optionally declare your custom fonts here.
  * You can use these fonts as default font too
@@ -535,7 +539,7 @@ typedef void * lv_obj_user_data_t;
 #define LV_USE_PRELOAD      1
 #if LV_USE_PRELOAD != 0
 #  define LV_PRELOAD_DEF_ARC_LENGTH   60      /*[deg]*/
-#  define LV_PRELOAD_DEF_SPIN_TIME    1000    /*[ms]*/
+#  define LV_PRELOAD_DEF_SPIN_TIME    500    /*[ms]*/
 #  define LV_PRELOAD_DEF_ANIM         LV_PRELOAD_TYPE_SPINNING_ARC
 #endif
 
