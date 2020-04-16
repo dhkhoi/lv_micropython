@@ -80,6 +80,7 @@ extern "C" {
 #define LV_SYMBOL_STEP            "\xef\x95\x8B" /*0xF54B*/
 #define LV_SYMBOL_HEART           "\xef\x88\x9E" /*0xF21E*/
 #define LV_SYMBOL_CALORIES        "\xef\x81\xAD" /*0xF06D*/
+#define LV_SYMBOL_WEATHER         "\xef\x86\x85" /*0xF185*/
 /** Invalid symbol at (U+F8FF). If written before a string then `lv_img` will show it as a label*/
 #define LV_SYMBOL_DUMMY           "\xEF\xA3\xBF"
 
@@ -142,6 +143,7 @@ enum {
     _LV_STR_SYMBOL_STEP,
     _LV_STR_SYMBOL_HEART,
     _LV_STR_SYMBOL_CALORIES,
+    _LV_STR_SYMBOL_WEATHER,
 };
 
 #ifdef __cplusplus
