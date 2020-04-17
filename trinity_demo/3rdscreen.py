@@ -159,8 +159,8 @@ label7.set_text("Sunny")
 
 #set style of arc
 style3=lv.style_t(style1)
-style3.line.width = 6                          # 10 px thick arc
-style3.line.color = lv.color_make(235, 73, 140)       # Blueish arc color
+style3.line.width = 6                          
+style3.line.color = lv.color_make(235, 73, 140)     
 style3.body.border.color = lv.color_make(255,255,255)
 style3.body.border.width = 6
 style3.body.padding.left = 0
